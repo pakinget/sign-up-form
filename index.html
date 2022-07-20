@@ -5,13 +5,17 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
 		<title>Sign-Up Form</title>
 	</head>
 
 	<body>
 		<div class="container">
-			<div>
-				<h1 class="logo">ODIN</h1>
+			<div class="background">
+				<div class="logoCont">
+					<img src="/images/odin-lined.png" alt="The Odin Project Logo" class="logoImg">
+					<h1 class="logo">ODIN</h1>
+				</div>
 			</div>
 			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum condimentum arcu. Cras.</p>
@@ -20,27 +24,30 @@
 				<div class="form">
 					<p>Let's start!</p>
 					<form action="https://httpbin.org/post" method="post">
-						<label for="firstName">First Name</label>
-						<input type="text" id="firstName">
-						<label for="lastName">Last Name</label>
-						<input type="text" id="lastName">
-						<label for="email">Email</label>
-						<input type="email" id="email">
-						<label for="phone">Phone number</label>
-						<input type="tel" id="phone">
-						<label for="pass">Password</label>
-						<input type="password" id="pass">
-						<label for="confPass">Confirm password</label>
-						<input type="text" id="confPass">
+						<div class="card">
+							<label for="firstName">First Name</label>
+							<input type="text" id="firstName" name="firstName">
+							<label for="lastName">Last Name</label>
+							<input type="text" id="lastName" name="lastName">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email">
+							<label for="phone">Phone number</label>
+							<input type="tel" id="phone" name="phone">
+							<label for="pass">Password</label>
+							<input type="password" id="pass" name="pass">
+							<label for="confPass">Confirm password</label>
+							<input type="text" id="confPass" name="consPass">
+						</div>
+						<button type="submit" class="createAcc">Create Account</button>
 					</form>
 				</div>
 				<div class="login">
-					<button class="createAcc">Create Account</button>
 					<p>Already have an account? <a href="">Log in</a></p>
 				</div>
 
 			</div>
 		</div>
+		<script src="script.js"></script>
 	</body>
 
 </html>

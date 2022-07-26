@@ -180,12 +180,12 @@ body,
 }
 
 p {
-	font-size: 2rem;
+	font-size: 6vh;
 }
 
 label {
 	color: #637c87;
-	font-size: 1rem;
+	font-size: 2.2vh;
 }
 
 .form {
@@ -208,13 +208,15 @@ label {
 
 input {
 	width: 12vw;
+	height: 2vh;
 }
 
 button {
 	background: #637c87;
 	color: #FFFFFF;
 	display: block;
-	font-size: 1rem;
+	font-size: 2.2vh;
+	;
 	margin-top: 1vh;
 	border-radius: 0.4rem;
 }
